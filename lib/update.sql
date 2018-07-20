@@ -1,2 +1,2 @@
 
-UPDATE species FROM characters ORDER BY id DESC LIMIT 1 SET name = 'Martian';
+UPDATE characters SET species = 'Martian' WHERE ORDER BY id DESC LIMIT 1;
