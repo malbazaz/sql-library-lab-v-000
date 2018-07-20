@@ -13,7 +13,7 @@ end
 
 def select_name_and_series_subgenres_of_authors
   "SELECT authors.name FROM authors LEFT JOIN series ON authors.id = series.author_id
-  UNION
+  UNION ALL
   SELECT subgenres.name FROM subgenres LEFT JOIN series ON subgenres.id = series.subgenre_id;"
 end
 
